@@ -1,0 +1,72 @@
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/library/apis.ts[24m[0m
+[0m  [2m23:7[22m  [31merror[39m  Parsing error: Unexpected token :[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/library/common.ts[24m[0m
+[0m  [2m7:8[22m  [31merror[39m  Parsing error: Unexpected token interface[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/library/httpUrl.ts[24m[0m
+[0m  [2m10:21[22m  [31merror[39m  Parsing error: Unexpected token :[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/library/method.ts[24m[0m
+[0m  [2m2:14[22m  [31merror[39m  Parsing error: The keyword 'enum' is reserved[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/library/util.ts[24m[0m
+[0m  [2m2:33[22m  [31merror[39m  Parsing error: Unexpected token :[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/modules/chats/chats.ts[24m[0m
+[0m  [2m18:35[22m  [31merror[39m  Parsing error: Unexpected token :[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/modules/chats/type.ts[24m[0m
+[0m  [2m3:1[22m  [31merror[39m  Parsing error: The keyword 'interface' is reserved[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/modules/group/group.ts[24m[0m
+[0m  [2m7:30[22m  [31merror[39m  Parsing error: Unexpected token :[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/modules/group/type.ts[24m[0m
+[0m  [2m1:1[22m  [31merror[39m  Parsing error: The keyword 'interface' is reserved[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/modules/login/login.ts[24m[0m
+[0m  [2m9:29[22m  [31merror[39m  Parsing error: Unexpected token :[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/modules/login/type.ts[24m[0m
+[0m  [2m2:8[22m  [31merror[39m  Parsing error: Unexpected token interface[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/modules/profile/profile.ts[24m[0m
+[0m  [2m9:36[22m  [31merror[39m  Parsing error: Unexpected token :[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/modules/profile/type.ts[24m[0m
+[0m  [2m1:1[22m  [31merror[39m  Parsing error: The keyword 'interface' is reserved[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/modules/sns/sns.ts[24m[0m
+[0m  [2m9:31[22m  [31merror[39m  Parsing error: Unexpected token :[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/modules/sns/type.ts[24m[0m
+[0m  [2m1:1[22m  [31merror[39m  Parsing error: The keyword 'interface' is reserved[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/modules/socket/socket.ts[24m[0m
+[0m  [2m15:11[22m  [31merror[39m  Parsing error: Unexpected token state[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/modules/socket/type.ts[24m[0m
+[0m  [2m4:14[22m  [31merror[39m  Parsing error: The keyword 'enum' is reserved[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/modules/tag/tag.ts[24m[0m
+[0m  [2m9:28[22m  [31merror[39m  Parsing error: Unexpected token :[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/modules/tag/type.ts[24m[0m
+[0m  [2m2:1[22m  [31merror[39m  Parsing error: The keyword 'interface' is reserved[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/modules/timeline/timeline.ts[24m[0m
+[0m  [2m9:35[22m  [31merror[39m  Parsing error: Unexpected token :[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/modules/timeline/type.ts[24m[0m
+[0m  [2m2:1[22m  [31merror[39m  Parsing error: The keyword 'interface' is reserved[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/modules/type.ts[24m[0m
+[0m  [2m2:8[22m  [31merror[39m  Parsing error: Unexpected token interface[0m
+[0m[0m
+[0m[4m/Users/chenjiajing/Desktop/chenjiajing/forchange/ninth-studio/wind-sdk/src/wind.ts[24m[0m
+[0m  [2m12:1[22m  [31merror[39m  Parsing error: The keyword 'interface' is reserved[0m
+[0m[0m
+[0m[31m[1m✖ 23 problems (23 errors, 0 warnings)[22m[39m[0m
+[0m[31m[1m[22m[39m[0m

@@ -1,0 +1,22 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false,
+        "useBuiltIns": "usage",
+        "corejs": "3.6.4",
+        // 使用 loose 模式，避免产生副作用
+        "loose": true,
+        "targets": {
+          "ie": 10
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    // 解决多个地方使用相同代码导致打包重复的问题
+    ["@babel/plugin-transform-runtime"]
+  ],
+  "ignore": ["node_modules/**"]
+}
