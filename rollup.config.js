@@ -12,7 +12,7 @@ const isDev = process.env.NODE_ENV !== "production";
 
 export default {
   input: "./src/index.ts",
-  external: ["express", "get-port", "glob"],
+  external: ["express", "get-port", "glob", "fs"],
   plugins: [
     resolve({
       browser: true,
