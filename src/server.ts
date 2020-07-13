@@ -3,9 +3,9 @@ import express from "express";
 import getPort from "get-port";
 import path from "path";
 
-import { getMockConfigs } from "./utils";
+import { getMockApis } from "./utils";
 
-getMockConfigs({ appPath: "./" })
+getMockApis();
 
 const app = express();
 export const HTTP_METHODS = ["GET", "POST", "HEAD", "PUT", "DELETE", "CONNECT", "OPTIONS", "TRACE", "PATCH"];

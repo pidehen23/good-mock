@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   'GET /api/user/1': {
     name: '陈家敬'
   },
