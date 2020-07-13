@@ -2,13 +2,20 @@ import chalk from "chalk";
 import express from "express";
 import getPort from "get-port";
 import path from "path";
-
-import { getMockApis } from "./utils";
-
-getMockApis();
+import { getMockApis, HTTP_METHODS, METHODS } from "./utils";
 
 const app = express();
-export const HTTP_METHODS = ["GET", "POST", "HEAD", "PUT", "DELETE", "CONNECT", "OPTIONS", "TRACE", "PATCH"];
+// const ServerMethod = {
+//   "GET": app.get,
+//   "POST": app.post,
+//   "HEAD": app.head,
+//   "PUT": app.put,
+//   "DELETE": app.delete,
+//   "CONNECT": app.connect,
+//   "OPTIONS": app.options,
+//   "TRACE": app.trace,
+//   "PATCH": app.patch
+// }
 
 interface IServerOptions {
   https?: boolean
@@ -56,18 +63,79 @@ export default class Server {
         next();
       }
     });
-
-    app.use("/user", function (_req, res) {
-      setTimeout(() => {
-        res.json({
-          status: 1,
-          msg: "查询成功",
-          data: {
-            name: "张三"
-          }
-        });
-      }, Math.random() * 500 + 500);
-    });
+    getMockApis().map(item => {
+      switch (item.method) {
+        case METHODS.GET:
+          app.get(item.apiPath, (_req, res) => {
+            setTimeout(() => {
+              res.json(item.result);
+            }, Math.random() * 500 + 500);
+          });
+          break;
+        case METHODS.POST:
+          app.post(item.apiPath, (_req, res) => {
+            setTimeout(() => {
+              res.json(item.result);
+            }, Math.random() * 500 + 500);
+          });
+          break;
+        case METHODS.HEAD:
+          app.head(item.apiPath, (_req, res) => {
+            setTimeout(() => {
+              res.json(item.result);
+            }, Math.random() * 500 + 500);
+          });
+          break;
+        case METHODS.PUT:
+          app.put(item.apiPath, (_req, res) => {
+            setTimeout(() => {
+              res.json(item.result);
+            }, Math.random() * 500 + 500);
+          });
+          break;
+        case METHODS.DELETE:
+          app.delete(item.apiPath, (_req, res) => {
+            setTimeout(() => {
+              res.json(item.result);
+            }, Math.random() * 500 + 500);
+          });
+          break;
+        case METHODS.CONNECT:
+          app.connect(item.apiPath, (_req, res) => {
+            setTimeout(() => {
+              res.json(item.result);
+            }, Math.random() * 500 + 500);
+          });
+          break;
+        case METHODS.OPTIONS:
+          app.options(item.apiPath, (_req, res) => {
+            setTimeout(() => {
+              res.json(item.result);
+            }, Math.random() * 500 + 500);
+          });
+          break;
+        case METHODS.TRACE:
+          app.trace(item.apiPath, (_req, res) => {
+            setTimeout(() => {
+              res.json(item.result);
+            }, Math.random() * 500 + 500);
+          });
+          break;
+        case METHODS.PATCH:
+          app.patch(item.apiPath, (_req, res) => {
+            setTimeout(() => {
+              res.json(item.result);
+            }, Math.random() * 500 + 500);
+          });
+          break;
+        default:
+          app.get(item.apiPath, (_req, res) => {
+            setTimeout(() => {
+              res.json(item.result);
+            }, Math.random() * 500 + 500);
+          });
+      }
+    })
   }
 
   async start() {
