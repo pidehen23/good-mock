@@ -11,7 +11,7 @@ import pkg from "./package.json";
 const isDev = process.env.NODE_ENV !== "production";
 
 export default {
-  input: "./src/index.ts",
+  input: "src/index.ts",
   external: ["express", "get-port", "glob", "fs"],
   plugins: [
     resolve({

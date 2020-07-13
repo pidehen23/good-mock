@@ -1,5 +1,4 @@
-import Server from "./server";
+import Mock from "./server";
 
-const server = new Server({});
+export { Mock };
 
-server.start();

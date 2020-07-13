@@ -1,21 +1,9 @@
-import chalk from "chalk";
 import express from "express";
 import getPort from "get-port";
 import path from "path";
 import { getMockApis, HTTP_METHODS, METHODS } from "./utils";
 
 const app = express();
-// const ServerMethod = {
-//   "GET": app.get,
-//   "POST": app.post,
-//   "HEAD": app.head,
-//   "PUT": app.put,
-//   "DELETE": app.delete,
-//   "CONNECT": app.connect,
-//   "OPTIONS": app.options,
-//   "TRACE": app.trace,
-//   "PATCH": app.patch
-// }
 
 interface IServerOptions {
   https?: boolean
@@ -24,7 +12,7 @@ interface IServerOptions {
   middlewares?: express.RequestHandler<any>[]
 }
 
-export default class Server {
+export default class Mock {
   isHttps: boolean
   port: number
   host: string
@@ -142,7 +130,7 @@ export default class Server {
     const port = await getPort({ port: this.port })
     const protocol = this.isHttps ? "https://" : "http://"
     app.listen(port, this.host, () => {
-      console.log(chalk.green(`数据 mock 服务已启动，Server 地址: ${protocol}${this.host}:${port}`))
+      console.log(require("chalk").default.green(`\n数据 mock 服务已启动，Server 地址: ${protocol}${this.host}:${port}`))
     })
   }
 }

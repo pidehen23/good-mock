@@ -3,8 +3,7 @@ import glob from "glob";
 import fs from "fs";
 import { pathToRegexp } from "path-to-regexp";
 
-
-export const MOCK_DIR = "mock";
+export const MOCK_DIR = "mock/data";
 export const enum METHODS {
   GET = "GET",
   POST = "POST",
@@ -90,6 +89,7 @@ export function parseMockApis(mockConfigs: { [x: string]: any; }) {
       method,
       result
     })
+    console.log(require("chalk").default.cyan(`Generating api ${method} ${apiPath}`));
   })
   return apiList
 }
