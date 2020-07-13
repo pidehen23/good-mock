@@ -8,9 +8,7 @@ module.exports = {
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly",
-    ENV: true,
-    apis: true,
-    axios: true
+    ENV: true
   },
   parserOptions: {
     sourceType: "module",
