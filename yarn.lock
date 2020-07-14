@@ -947,10 +947,10 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
-"@rollup/plugin-commonjs@^13.0.1":
-  version "13.0.1"
-  resolved "https://registry.npm.taobao.org/@rollup/plugin-commonjs/download/@rollup/plugin-commonjs-13.0.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40rollup%2Fplugin-commonjs%2Fdownload%2F%40rollup%2Fplugin-commonjs-13.0.1.tgz#4fe12144271af724db35bac07b9bf718f22332e0"
-  integrity sha1-T+EhRCca9yTbNbrAe5v3GPIjMuA=
+"@rollup/plugin-commonjs@^14.0.0":
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-commonjs/-/plugin-commonjs-14.0.0.tgz#4285f9ec2db686a31129e5a2b415c94aa1f836f0"
+  integrity sha512-+PSmD9ePwTAeU106i9FRdc+Zb3XUWyW26mo5Atr2mk82hor8+nPwkztEjFo8/B1fJKfaQDg9aM2bzQkjhi7zOw==
   dependencies:
     "@rollup/pluginutils" "^3.0.8"
     commondir "^1.0.1"
@@ -1048,10 +1048,15 @@
   resolved "https://registry.npm.taobao.org/@types/mime/download/@types/mime-2.0.2.tgz#857a118d8634c84bba7ae14088e4508490cd5da5"
   integrity sha1-hXoRjYY0yEu6euFAiORQhJDNXaU=
 
-"@types/node@*", "@types/node@^14.0.22":
+"@types/node@*":
   version "14.0.22"
   resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-14.0.22.tgz?cache=0&sync_timestamp=1594397594455&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-14.0.22.tgz#23ea4d88189cec7d58f9e6b66f786b215eb61bdc"
   integrity sha1-I+pNiBic7H1Y+ea2b3hrIV62G9w=
+
+"@types/node@^14.0.23":
+  version "14.0.23"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.23.tgz#676fa0883450ed9da0bb24156213636290892806"
+  integrity sha512-Z4U8yDAl5TFkmYsZdFPdjeMa57NOvnaf1tljHzhouaPEp7LCj2JKkejpI1ODviIAQuW4CcQmxkQ77rnLsOOoKw==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
