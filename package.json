@@ -1,6 +1,6 @@
 {
     "name": "good-mock",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "好用的 Mock 数据模板",
     "main": "dist/index.js",
     "module": "dist/index-esm-min.js",
@@ -56,6 +56,7 @@
         "core-js": "^3.6.5",
         "cross-env": "^7.0.2",
         "eslint": "^7.4.0",
+        "good-mock": "^0.0.3",
         "husky": "^4.2.5",
         "lint-staged": "^10.2.11",
         "livereload": "^0.9.1",
