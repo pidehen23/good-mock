@@ -49,7 +49,7 @@ export function getMockConfigs({ appPath, mocks }: { appPath: string, mocks?: { 
 
       absMockFiles.forEach(absFile => {
         try {
-          const file = require(`../${absFile}`)
+          const file = require(`${absFile}`)
           mockConfigs = Object.assign({}, mockConfigs, file)
         } catch (error) {
           console.error(error)
@@ -95,7 +95,7 @@ export function parseMockApis(mockConfigs: { [x: string]: any; }) {
 }
 
 export function getMockApis() {
-  const mockConfigs = getMockConfigs({ appPath: "./" })
+  const mockConfigs = getMockConfigs({ appPath: process.cwd() })
   return parseMockApis(mockConfigs)
 }
 
