@@ -13,31 +13,31 @@ interface IServerOptions {
 }
 
 export default class Mock {
-  isHttps: boolean
-  port: number
-  host: string
+  private isHttps = false
+  private port = 3000
+  private host = "127.0.0.1"
 
   constructor(options: IServerOptions) {
-    this.isHttps = options.https || false
-    this.port = options.port || 3000
-    this.host = options.host || "127.0.0.1"
-    this.setMiddlewares(options.middlewares)
-    this.onCreateServer()
+    this.isHttps = options.https || this.isHttps;
+    this.port = options.port || this.port;
+    this.host = options.host || this.host;
+    this.setMiddlewares(options.middlewares);
+    this.onCreateServer();
   }
 
   setMiddlewares(middlewares?: express.RequestHandler<any>[]) {
     if (middlewares && middlewares.length) {
       middlewares.forEach(middleware => {
-        app.use(middleware)
-      })
+        app.use(middleware);
+      });
     }
   }
 
   onCreateServer() {
     app.use(express.static(path.join(__dirname, "./")));
     app.use((req, _res, next) => {
-      console.log("req.url:" + req.url)
-      next()
+      console.log("req.url:" + req.url);
+      next();
     });
 
     app.all("*", function (req, res, next) {
@@ -123,15 +123,15 @@ export default class Mock {
             }, Math.random() * 500 + 500);
           });
       }
-    })
+    });
   }
 
   async start() {
-    const port = await getPort({ port: this.port })
-    const protocol = this.isHttps ? "https://" : "http://"
+    const port = await getPort({ port: this.port });
+    const protocol = this.isHttps ? "https://" : "http://";
     app.listen(port, this.host, () => {
-      console.log(require("chalk").default.green(`\n数据 mock 服务已启动，Server 地址: ${protocol}${this.host}:${port}`))
-    })
+      console.log(require("chalk").default.green(`\n数据 mock 服务已启动，Server 地址: ${protocol}${this.host}:${port}`));
+    });
   }
 }
 
