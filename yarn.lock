@@ -1219,11 +1219,6 @@
     "@types/qs" "*"
     "@types/serve-static" "*"
 
-"@types/http-errors@^1.8.0":
-  version "1.8.0"
-  resolved "https://registry.npm.taobao.org/@types/http-errors/download/@types/http-errors-1.8.0.tgz?cache=0&sync_timestamp=1594389045283&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fhttp-errors%2Fdownload%2F%40types%2Fhttp-errors-1.8.0.tgz#682477dbbbd07cd032731cb3b0e7eaee3d026b69"
-  integrity sha1-aCR327vQfNAycxyzsOfq7j0Ca2k=
-
 "@types/json-schema@^7.0.3":
   version "7.0.5"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.5.tgz#dcce4430e64b443ba8945f0290fb564ad5bac6dd"
@@ -3896,10 +3891,10 @@ globals@^12.1.0:
   dependencies:
     type-fest "^0.8.1"
 
-good-mock@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/good-mock/-/good-mock-0.0.3.tgz#11454b3dda0f1c8e366b77f72de908c878059291"
-  integrity sha512-kjFel7nOHWovhI5YE37p1LLiAkC+wrzr75AVbHqSCoPmaNlEGBHI0/A1Sa7nDY/yI+msCDuFy+3OhHO46rAPQw==
+good-mock@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/good-mock/-/good-mock-0.0.4.tgz#071397a9313a6ebaf9a64790eb0b08f6b84263eb"
+  integrity sha512-aqD6mwdFlmnTD36+ssZagb5xfkOC9fd5dNZ/jgOa76TXmqGcLiHSYrIupqXpRE9ffs/+jxwlDC0ER9hxikqB/g==
   dependencies:
     express "^4.17.1"
     get-port "^5.1.1"
