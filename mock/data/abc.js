@@ -3,7 +3,7 @@ module.exports = {
     name: '陈家敬'
   },
 
-  'POST     /api/info': {
-    file: 'xxxx'
+  'POST /api/info': {
+    file: '无敌是多么寂寞'
   }
 }
