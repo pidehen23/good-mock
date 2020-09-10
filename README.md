@@ -1,4 +1,5 @@
 # good-mock
+
 [![npm version](https://img.shields.io/npm/v/good-mock.svg)](https://www.npmjs.com/package/@forchange/aui)
 
 > 简单好用的 数据 Mock 插件
@@ -13,13 +14,13 @@ $ yarn add good-mock -D
 
 ## 使用
 
-在项目根目录下新建文件夹 `mock`,在新建 data 目录和一个执行脚本文件 index.js（文件随意命名，也可以不放在mock目录下）
+在项目根目录下新建文件夹 `mock`,在新建 data 目录和一个配置文件 config.js（文件名必选为 config.js）
 data (可多级目录和多个 js 文件)中 `.js` 中文件格式如下：
 其中 `mock/data`中参数是用于设置数据 mock 接口，以 k-v 的方式进行设置，接口的 HTTP 方法通过在 key 中进行指定，支持的 HTTP 方法有：`['GET', 'POST', 'HEAD', 'PUT', 'DELETE', 'CONNECT', 'OPTIONS', 'TRACE', 'PATCH']`
 
 ### 步骤一
 
-`./mock/data/api.js` 或 `// mock/data/user/api.js`
+`./mock/data/api.js` 或 `./mock/data/user/api.js`
 
 ```javascript
 module.exports = {
@@ -27,7 +28,7 @@ module.exports = {
 		name: 'xxx'
 	},
 
-	'POST     /api/info': {
+	'POST /api/info': {
 		file: 'xxxx'
 	}
 };
@@ -35,38 +36,34 @@ module.exports = {
 
 ### 步骤二
 
-`./mock/index.js` 脚本文件
+`./mock/config.js` 配置文件
 
 ```js
-const goodMock = require('good-mock')
-
-const config = {
-  host: 'localhost', // host，默认 127.0.0.1
-  port: 1234, // 端口，默认 1234
-  https: false，// 是否是 https 默认为 false
-}
-
-const server = new goodMock.Mock(config)
-
-void server.start()
-
+// mock 配置文件
+module.exports = {
+	host: 'localhost',
+	port: 1234,
+	https: false
+};
 ```
 
 ### 步骤三
-shell中执行
+
+shell 中执行
 
 ```bash
-node ./mock/index.js
+node ./node_modules/.bin/good-mock
 ```
 
 也可以在 package.json 中添加脚本执行
 
 ```
  "scripts": {
-   "mock": "node ./mock/index.js"
+   "mock": "node ./node_modules/.bin/good-mock"
  }
 ```
-end ```npm run mock ```
+
+end `npm run mock `
 
 ### 参数
 
@@ -76,6 +73,4 @@ end ```npm run mock ```
 | :----- | :------ | :------- | :--------------------------------------- |
 | host   | string  | 是       | 设置数据 mock 服务地址，默认为 127.0.0.1 |
 | port   | number  | 是       | 设置数据 mock 服务端口，默认为 1234      |
-| https  | boolean | 是       | 是否是 https                             |
-
-
+| https  | boolean | 是       | 是否是 https (暂不可用)                  |

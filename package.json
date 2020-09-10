@@ -1,6 +1,6 @@
 {
     "name": "good-mock",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "好用的 Mock 数据模板",
     "main": "dist/index.js",
     "module": "dist/index-esm-min.js",
@@ -33,14 +33,14 @@
         "test": "parcel test/index.html --out-dir test/dist",
         "server": "node lib/index.js",
         "watch": "npm-run-all --parallel reload server",
-        "gc": "git-cz"
+        "gc": "git-cz",
+        "mock": "node ./node_modules/.bin/good-mock"
     },
     "dependencies": {
         "chokidar": "^3.4.2",
         "express": "^4.17.1",
         "get-port": "^5.1.1",
         "glob": "^7.1.6",
-        "good-mock": "^0.0.4",
         "path-to-regexp": "^6.1.0"
     },
     "devDependencies": {
@@ -61,6 +61,7 @@
         "core-js": "^3.6.5",
         "cross-env": "^7.0.2",
         "eslint": "^7.8.1",
+        "good-mock": "^0.0.5",
         "husky": "^4.3.0",
         "lint-staged": "^10.3.0",
         "livereload": "^0.9.1",
