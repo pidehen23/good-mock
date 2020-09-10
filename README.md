@@ -52,14 +52,14 @@ module.exports = {
 shell 中执行
 
 ```bash
-node ./node_modules/.bin/good-mock
+nodemon --watch mock ./node_modules/.bin/good-mock
 ```
 
 也可以在 package.json 中添加脚本执行
 
 ```
  "scripts": {
-   "mock": "node ./node_modules/.bin/good-mock"
+   "mock": "nodemon --watch mock ./node_modules/.bin/good-mock"
  }
 ```
 
