@@ -40,6 +40,7 @@
         "express": "^4.17.1",
         "get-port": "^5.1.1",
         "glob": "^7.1.6",
+        "good-mock": "^0.0.4",
         "path-to-regexp": "^6.1.0"
     },
     "devDependencies": {
@@ -60,7 +61,6 @@
         "core-js": "^3.6.5",
         "cross-env": "^7.0.2",
         "eslint": "^7.8.1",
-        "good-mock": "^0.0.4",
         "husky": "^4.3.0",
         "lint-staged": "^10.3.0",
         "livereload": "^0.9.1",
