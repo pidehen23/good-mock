@@ -1477,10 +1477,10 @@
   resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-14.0.22.tgz?cache=0&sync_timestamp=1594397594455&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-14.0.22.tgz#23ea4d88189cec7d58f9e6b66f786b215eb61bdc"
   integrity sha1-I+pNiBic7H1Y+ea2b3hrIV62G9w=
 
-"@types/node@^14.6.4":
-  version "14.6.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.6.4.tgz#a145cc0bb14ef9c4777361b7bbafa5cf8e3acb5a"
-  integrity sha512-Wk7nG1JSaMfMpoMJDKUsWYugliB2Vy55pdjLpmLixeyMi7HizW2I/9QoxsPCkXl3dO+ZOVqPumKaDUv5zJu2uQ==
+"@types/node@^14.10.0":
+  version "14.10.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.10.0.tgz#15815dff82c8dc30827f6b1286f865902945095a"
+  integrity sha512-SOIyrdADB4cq6eY1F+9iU48iIomFAPltu11LCvA9PKcyEwHadjCFzNVPotAR+oEJA0bCP4Xvvgy+vwu1ZjVh8g==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -4356,10 +4356,10 @@ globby@^11.0.1:
     merge2 "^1.3.0"
     slash "^3.0.0"
 
-good-mock@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/good-mock/-/good-mock-1.0.0.tgz#e6536f907908b127a4b9f58b838f1898d1d9148f"
-  integrity sha512-C3ZFddrZlZkNvG5497v6cTmBNP4zHr7+1c1pOtbF9RIHNo6ImrqAKUkm1hkSDjN0IA4IYUz1cRT0TdGR4+zTWA==
+good-mock@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/good-mock/-/good-mock-1.0.1.tgz#2f3cae6484fb49da5c00b819bd38ac742192be9d"
+  integrity sha512-8bBdFiCrdl9jfvlp819/w5N0fsgdIe/iCfqwaKkVXAYSw27S5abPliVRDj8fH3v9s/WV0CsUjGjnSs6YyVDq6w==
   dependencies:
     express "^4.17.1"
     get-port "^5.1.1"
