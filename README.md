@@ -1,6 +1,6 @@
 # good-mock
 
-[![npm version](https://img.shields.io/npm/v/good-mock.svg)](https://www.npmjs.com/package/@forchange/aui)
+[![npm version](https://img.shields.io/npm/v/good-mock.svg)](https://www.npmjs.com/package/good-mock)
 
 > 简单好用的 数据 Mock 插件
 
