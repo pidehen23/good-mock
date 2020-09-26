@@ -83,14 +83,13 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "lint-staged",
+            "pre-commit": "npm run fix && lint-staged",
             "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
         }
     },
     "lint-staged": {
         "src/**/*.ts": [
             "prettier --write",
-            "fix",
             "git add"
         ]
     }
