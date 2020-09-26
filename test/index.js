@@ -1,16 +1,12 @@
-/*
- * @Description: test
- * @Author: Chenjiajing
- * @Date: 2020-07-15 22:55:37
- * @LastEditors: Chenjiajing
- * @LastEditTime: 2020-09-09 12:00:20
- */
 // TEST
 const mock = require("../dist/index");
+// const mock = require("good-mock");
+
 const config = {
   host: "localhost",
   port: 1234,
-  https: false
+  https: false,
+  resTime: 600
 };
 
 const server = new mock.Mock(config);

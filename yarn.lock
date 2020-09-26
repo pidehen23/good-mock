@@ -4419,10 +4419,10 @@ globby@^11.0.1:
     merge2 "^1.3.0"
     slash "^3.0.0"
 
-good-mock@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/good-mock/-/good-mock-1.0.3.tgz#6ba0c4241e941cc1c55cb199d4b2e64a7622be37"
-  integrity sha512-VavSfGfC8TciQ/AUgot2uxfYWLI0OKYutPdrV8cEy56633doeJDxgyeuQzDrbzaS0+89j3SMS5MnpTcaUzpoWA==
+good-mock@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/good-mock/-/good-mock-1.1.0.tgz#5bae21e737f745cd0428b6c52df73636dfb7689e"
+  integrity sha512-WcfLOowlzhoz5+xBi1tQJ7BMFnyts1ECMz7G/FXadIMvFEO/ZpDBEUvjJEGdk14dUKRTI2lnT/Xp3vlVgZWP0w==
   dependencies:
     express "^4.17.1"
     get-port "^5.1.1"

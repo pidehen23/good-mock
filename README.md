@@ -24,7 +24,8 @@ data (可多级目录和多个 js 文件)中 `.js` 中文件格式如下：
 
 ```javascript
 module.exports = {
-	'GET /api/info/1': {
+	// GET => method ， /api/info/1 =>api path ， 3000 => 数据返回时间，毫秒（ms），会覆盖配置的中 resTime
+	'GET /api/info/1 3000': {
 		name: 'xxx'
 	},
 
@@ -41,9 +42,10 @@ module.exports = {
 ```js
 // mock 配置文件
 module.exports = {
-	host: 'localhost',
-	port: 1234,
-	https: false
+	host: 'localhost', // host
+	port: 1234, // 端口
+	https: false, // 是否https 请求
+	resTime: 600 // 全局数据返回时间，毫秒
 };
 ```
 
@@ -69,8 +71,9 @@ end `npm run mock `
 
 `mock/index.js` 中可以接受如下参数：
 
-| 参数项 | 类型    | 是否可选 | 用途                                     |
-| :----- | :------ | :------- | :--------------------------------------- |
-| host   | string  | 是       | 设置数据 mock 服务地址，默认为 127.0.0.1 |
-| port   | number  | 是       | 设置数据 mock 服务端口，默认为 1234      |
-| https  | boolean | 是       | 是否是 https (暂不可用)                  |
+| 参数项  | 类型    | 是否可选 | 用途                                     |
+| :------ | :------ | :------- | :--------------------------------------- |
+| host    | string  | 是       | 设置数据 mock 服务地址，默认为 127.0.0.1 |
+| port    | number  | 是       | 设置数据 mock 服务端口，默认为 1234      |
+| https   | boolean | 是       | 是否是 https (暂不可用)                  |
+| resTime | number  | 是       | 全局请求后数据返回时间，毫秒，默认为 500 |

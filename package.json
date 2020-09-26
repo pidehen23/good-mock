@@ -1,13 +1,12 @@
 {
     "name": "good-mock",
-    "version": "1.0.3",
+    "version": "1.1.0",
     "description": "好用的 Mock 数据模板",
     "main": "dist/index.js",
     "module": "dist/index-esm-min.js",
     "types": "dist/index.d.ts",
     "files": [
-        "dist",
-        "lib"
+        "dist"
     ],
     "bin": {
         "good-mock": "./lib/index.js"
@@ -29,8 +28,8 @@
         "build": "rm -rf dist/*  && cp -R lib dist &&  NODE_ENV=production rollup  -c",
         "build:win": "rm -rf dist/*  && cross-env NODE_ENV=production rollup  -c",
         "fix": "eslint src --ext .tsx,.ts --color --fix",
-        "test": "parcel test/index.html --out-dir test/dist",
-        "mock": "nodemon --watch mock ./dist/lib/index.js",
+        "test": "parcel test/index.html --out-dir test/dist --port 3000",
+        "mock": "npm run build && npm link good-mock && nodemon --watch mock ./dist/lib/index.js",
         "gc": "git-cz"
     },
     "dependencies": {
@@ -60,7 +59,7 @@
         "cross-env": "^7.0.2",
         "eslint": "^7.9.0",
         "eslint-config-prettier": "^6.12.0",
-        "good-mock": "^1.0.3",
+        "good-mock": "^1.1.0",
         "husky": "^4.3.0",
         "lint-staged": "^10.4.0",
         "livereload": "^0.9.1",
