@@ -1,7 +1,7 @@
-import express from 'express';
-import getPort from 'get-port';
-import path from 'path';
-import { getMockApis, HTTP_METHODS, METHODS } from './utils';
+import express from "express";
+import getPort from "get-port";
+import path from "path";
+import { getMockApis, HTTP_METHODS, METHODS } from "./utils";
 
 const app = express();
 
@@ -16,7 +16,7 @@ interface IServerOptions {
 export default class Mock {
 	private isHttps = false;
 	private port = 3000;
-	private host = '127.0.0.1';
+	private host = "127.0.0.1";
 	private resTime = 500;
 
 	constructor(options: IServerOptions) {
@@ -37,19 +37,19 @@ export default class Mock {
 	}
 
 	onCreateServer() {
-		const protocol = this.isHttps ? 'https://' : 'http://';
-		app.use(express.static(path.join(__dirname, './')));
+		const protocol = this.isHttps ? "https://" : "http://";
+		app.use(express.static(path.join(__dirname, "./")));
 		app.use((req, _res, next) => {
-			console.log(require('chalk').default.green(`请求地址URL: ${protocol}${this.host}:${this.port}${req.url}`));
+			console.log(require("chalk").default.green(`请求地址URL: ${protocol}${this.host}:${this.port}${req.url}`));
 			next();
 		});
 
-		app.all('*', function (req, res, next) {
-			res.header('Access-Control-Allow-Origin', '*');
-			res.header('Access-Control-Allow-Headers', 'Content-Type, Content-Length, Authorization, Accept, X-Requested-With , yourHeaderFeild');
-			res.header('Access-Control-Allow-Methods', HTTP_METHODS.join());
+		app.all("*", function (req, res, next) {
+			res.header("Access-Control-Allow-Origin", "*");
+			res.header("Access-Control-Allow-Headers", "Content-Type, Content-Length, Authorization, Accept, X-Requested-With , yourHeaderFeild");
+			res.header("Access-Control-Allow-Methods", HTTP_METHODS.join());
 
-			if (req.method == 'OPTIONS') {
+			if (req.method == "OPTIONS") {
 				res.send(200);
 			} else {
 				next();
@@ -133,9 +133,9 @@ export default class Mock {
 
 	async start() {
 		const port = await getPort({ port: this.port });
-		const protocol = this.isHttps ? 'https://' : 'http://';
+		const protocol = this.isHttps ? "https://" : "http://";
 		app.listen(port, this.host, () => {
-			console.log(require('chalk').default.green(`\n数据 mock 服务已启动，Server 地址: ${protocol}${this.host}:${port}`));
+			console.log(require("chalk").default.green(`\n数据 mock 服务已启动，Server 地址: ${protocol}${this.host}:${port}`));
 		});
 	}
 }

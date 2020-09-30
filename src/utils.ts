@@ -1,19 +1,19 @@
-import path from 'path';
-import glob from 'glob';
-import fs from 'fs';
-import { Key, pathToRegexp } from 'path-to-regexp';
+import path from "path";
+import glob from "glob";
+import fs from "fs";
+import { Key, pathToRegexp } from "path-to-regexp";
 
-export const MOCK_DIR = 'mock/data';
+export const MOCK_DIR = "mock/data";
 export const enum METHODS {
-	GET = 'GET',
-	POST = 'POST',
-	HEAD = 'HEAD',
-	PUT = 'PUT',
-	DELETE = 'DELETE',
-	CONNECT = 'CONNECT',
-	OPTIONS = 'OPTIONS',
-	TRACE = 'TRACE',
-	PATCH = 'PATCH'
+	GET = "GET",
+	POST = "POST",
+	HEAD = "HEAD",
+	PUT = "PUT",
+	DELETE = "DELETE",
+	CONNECT = "CONNECT",
+	OPTIONS = "OPTIONS",
+	TRACE = "TRACE",
+	PATCH = "PATCH"
 }
 
 export const HTTP_METHODS = [
@@ -41,7 +41,7 @@ export function getMockConfigs({ appPath, mocks }: { appPath: string; mocks?: { 
 	const mockDir = path.join(appPath, MOCK_DIR);
 	let mockConfigs = {};
 	if (fs.existsSync(mockDir)) {
-		const mockFiles = glob.sync('**/*.[tj]s', {
+		const mockFiles = glob.sync("**/*.[tj]s", {
 			cwd: mockDir
 		});
 
@@ -70,7 +70,7 @@ export function parseMockApis(mockConfigs: { [x: string]: any }) {
 	Object.keys(mockConfigs).map((key) => {
 		const result = mockConfigs[key];
 		let method = METHODS.GET;
-		let apiPath = '';
+		let apiPath = "";
 		let responseTime = 500; // 数据返回时间毫秒，默认为500
 		const keyList = key.split(/\s+/g);
 		if (keyList.length >= 2) {
@@ -81,7 +81,7 @@ export function parseMockApis(mockConfigs: { [x: string]: any }) {
 				throw `配置的 HTTP 方法名 ${method} 不正确，应该是 ${HTTP_METHODS.toString()} 中的一员！`;
 			}
 		} else if (keyList.length <= 1) {
-			apiPath = keyList[0] ?? '';
+			apiPath = keyList[0] ?? "";
 		}
 		const keys: Key[] = [];
 		const reg = pathToRegexp(apiPath, keys);
@@ -93,7 +93,7 @@ export function parseMockApis(mockConfigs: { [x: string]: any }) {
 			keys,
 			result
 		});
-		console.log(require('chalk').default.cyan(`Generating api ${method} ${apiPath}`));
+		console.log(require("chalk").default.cyan(`Generating api ${method} ${apiPath}`));
 	});
 	return apiList;
 }
