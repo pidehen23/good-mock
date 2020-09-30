@@ -4439,16 +4439,16 @@ globby@^11.0.1:
     merge2 "^1.3.0"
     slash "^3.0.0"
 
-good-mock@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/good-mock/-/good-mock-1.1.0.tgz#5bae21e737f745cd0428b6c52df73636dfb7689e"
-  integrity sha512-WcfLOowlzhoz5+xBi1tQJ7BMFnyts1ECMz7G/FXadIMvFEO/ZpDBEUvjJEGdk14dUKRTI2lnT/Xp3vlVgZWP0w==
+good-mock@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/good-mock/-/good-mock-1.2.0.tgz#12067b3afc1a7a88e3fe63b1bc8fed93411ccd1c"
+  integrity sha512-9iuEgnu/SYn3hCRkiV+RWvBSVM5yRKjRBRPuu/2Z7w2FX7xSgI4OfyvYaD6n8oIBjXPEQxAX+l99dwyviY1MTg==
   dependencies:
     express "^4.17.1"
     get-port "^5.1.1"
     glob "^7.1.6"
     nodemon "^2.0.4"
-    path-to-regexp "^6.1.0"
+    path-to-regexp "^6.2.0"
 
 got@^9.6.0:
   version "9.6.0"
@@ -6530,7 +6530,7 @@ path-parse@^1.0.6:
   resolved "https://registry.npm.taobao.org/path-parse/download/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
   integrity sha1-1i27VnlAXXLEc37FhgDp3c8G0kw=
 
-path-to-regexp@*, path-to-regexp@^6.1.0:
+path-to-regexp@*:
   version "6.1.0"
   resolved "https://registry.npm.taobao.org/path-to-regexp/download/path-to-regexp-6.1.0.tgz#0b18f88b7a0ce0bfae6a25990c909ab86f512427"
   integrity sha1-Cxj4i3oM4L+uaiWZDJCauG9RJCc=

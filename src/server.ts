@@ -15,7 +15,7 @@ interface IServerOptions {
 
 export default class Mock {
 	private isHttps = false;
-	private port = 3000;
+	private port = 1234;
 	private host = "127.0.0.1";
 	private resTime = 500;
 
