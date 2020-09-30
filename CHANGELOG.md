@@ -48,11 +48,3 @@ All notable changes to this project will be documented in this file. See [standa
 ### Bug Fixes
 
 * **master:** 更新文档 ([a25df1e](https://github.com/chenjiajing23/good-mock/commit/a25df1e2ebaea2635c639242f6dbaf688442efbd))
-
-#### 发布周期
-
-- 修订版本号：不定时会进行日常 bugfix 更新。（如果有紧急的 bugfix，则任何时候都可发布）
-- 次版本号：一个 feature 或多个 feature 同时发布。
-- 主版本号：含有破坏性更新和新特性，不在发布周期内。
-
----
