@@ -19,6 +19,9 @@
         "type": "git",
         "url": "https://github.com/chenjiajing23/good-mock.git"
     },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    },
     "keywords": [
         "mock",
         "typescript"
@@ -59,7 +62,7 @@
         "cross-env": "^7.0.2",
         "eslint": "^7.10.0",
         "eslint-config-prettier": "^6.12.0",
-        "good-mock": "^1.2.0",
+        "good-mock": "^1.2.1",
         "husky": "^4.3.0",
         "lint-staged": "^10.4.0",
         "livereload": "^0.9.1",
