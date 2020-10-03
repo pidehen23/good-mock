@@ -20,7 +20,7 @@
         "url": "https://github.com/chenjiajing23/good-mock.git"
     },
     "publishConfig": {
-        "registry": "https://npm.pkg.github.com/"
+        "registry": "https://registry.npmjs.org"
     },
     "keywords": [
         "mock",
@@ -33,7 +33,11 @@
         "fix": "eslint src --ext .tsx,.ts --color --fix",
         "test": "parcel test/index.html --out-dir test/dist --port 3000",
         "mock": "npm run build && npm link good-mock && nodemon --watch mock ./dist/lib/index.js",
-        "gc": "git-cz"
+        "gc": "git-cz",
+        "patch": "standard-version -r patch",
+        "minor": "standard-version -r minor",
+        "major": "standard-version -r major",
+        "pub": "npm run build && npx git push --follow-tags origin master && npx npm publish --access=public"
     },
     "dependencies": {
         "express": "^4.17.1",
@@ -76,6 +80,7 @@
         "rollup-plugin-terser": "^7.0.2",
         "rollup-plugin-typescript2": "^0.27.3",
         "rollup-watch": "^4.3.1",
+        "standard-version": "^9.0.0",
         "typescript": "^4.0.3"
     },
     "config": {
