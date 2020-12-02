@@ -1,6 +1,7 @@
 import path from "path";
 import glob from "glob";
 import fs from "fs";
+const chalk = require("chalk");
 import { Key, pathToRegexp } from "path-to-regexp";
 
 export const MOCK_DIR = "mock/data";
@@ -93,7 +94,7 @@ export function parseMockApis(mockConfigs: { [x: string]: any }) {
 			keys,
 			result
 		});
-		console.log(require("chalk").default.cyan(`Generating api ${method} ${apiPath}`));
+		console.log(chalk.cyan(`Generating api ${method} ${apiPath}`));
 	});
 	return apiList;
 }

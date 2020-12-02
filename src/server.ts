@@ -1,6 +1,7 @@
 import express from "express";
 import getPort from "get-port";
 import path from "path";
+const chalk = require("chalk");
 import { getMockApis, HTTP_METHODS, METHODS } from "./utils";
 
 const app = express();
@@ -40,7 +41,7 @@ export default class Mock {
 		const protocol = this.isHttps ? "https://" : "http://";
 		app.use(express.static(path.join(__dirname, "./")));
 		app.use((req, _res, next) => {
-			console.log(require("chalk").default.green(`请求地址URL: ${protocol}${this.host}:${this.port}${req.url}`));
+			console.log(chalk.green(`请求地址URL: ${protocol}${this.host}:${this.port}${req.url}`));
 			next();
 		});
 
@@ -135,7 +136,7 @@ export default class Mock {
 		const port = await getPort({ port: this.port });
 		const protocol = this.isHttps ? "https://" : "http://";
 		app.listen(port, this.host, () => {
-			console.log(require("chalk").default.green(`\n数据 mock 服务已启动，Server 地址: ${protocol}${this.host}:${port}`));
+			console.log(chalk.green(`\n数据 mock 服务已启动，Server 地址: ${protocol}${this.host}:${port}`));
 		});
 	}
 }

@@ -61,6 +61,7 @@
         "@types/path-to-regexp": "^1.7.0",
         "@typescript-eslint/eslint-plugin": "^4.9.0",
         "@typescript-eslint/parser": "^4.9.0",
+        "chalk": "^4.1.0",
         "commitizen": "^4.2.2",
         "core-js": "^3.8.0",
         "cross-env": "^7.0.3",
