@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.3](https://github.com/chenjiajing23/good-mock/compare/v1.2.2...v1.2.3) (2020-12-02)
+
+
+### Features
+
+* 🎸 master ([70a01a9](https://github.com/chenjiajing23/good-mock/commit/70a01a9d5c3acdce1b382ba04bcb9aac8cc4b8b4))
+
+
+### Bug Fixes
+
+* 🐛 master ([6d7c6be](https://github.com/chenjiajing23/good-mock/commit/6d7c6be9a444998863060cd6796483608de3352a))
+
 ### 1.2.2 (2020-10-03)
 
 
