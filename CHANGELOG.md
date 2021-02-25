@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.8](https://github.com/chenjiajing23/good-mock/compare/v1.2.7...v1.2.8) (2021-02-25)
+
+
+### Features
+
+* 🎸 master ([c51a9bb](https://github.com/chenjiajing23/good-mock/commit/c51a9bb9ed4395c3d7a13750b83051da182d5ee8))
+
 ### [1.2.7](https://github.com/chenjiajing23/good-mock/compare/v1.2.6...v1.2.7) (2021-02-25)
 
 
