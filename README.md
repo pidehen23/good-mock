@@ -14,13 +14,13 @@ $ yarn add good-mock -D
 
 ## 使用
 
-在项目根目录下新建文件夹 `mock`,在新建 data 目录和一个配置文件 config.js（文件名必选为 config.js）
+在项目根目录下新建文件夹 [mock 目录](https://github.com/chenjiajing23/good-mock/tree/master/mock)，在新建 data 目录和一个配置文件 config.js（文件名必选为 config.js）
 data (可多级目录和多个 js 文件)中 `.js` 中文件格式如下：
 其中 `mock/data`中参数是用于设置数据 mock 接口，以 k-v 的方式进行设置，接口的 HTTP 方法通过在 key 中进行指定，支持的 HTTP 方法有：`['GET', 'POST', 'HEAD', 'PUT', 'DELETE', 'CONNECT', 'OPTIONS', 'TRACE', 'PATCH']`
 
 #### 步骤一
 
-`./mock/data/api.js` 或 `./mock/data/user/api.js`
+`mock/data/api.js` 或 `mock/data/user/api.js`
 
 ```javascript
 module.exports = {
@@ -37,7 +37,7 @@ module.exports = {
 
 #### 步骤二
 
-`./mock/config.js` 配置文件
+`/mock/config.js` 配置文件
 
 ```js
 // mock 配置文件
@@ -71,7 +71,7 @@ end `npm run mock `
 
 ## 参数
 
-`mock/index.js` 中可以接受如下参数：
+`/mock/index.js` 中可以接受如下参数：
 
 | 参数项  | 类型    | 是否可选 | 用途                                     |
 | :------ | :------ | :------- | :--------------------------------------- |
