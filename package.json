@@ -44,6 +44,7 @@
         "get-port": "^5.1.1",
         "glob": "^7.1.6",
         "nodemon": "^2.0.6",
+        "chalk": "^4.1.0",
         "path-to-regexp": "^6.2.0"
     },
     "devDependencies": {
@@ -61,7 +62,6 @@
         "@types/path-to-regexp": "^1.7.0",
         "@typescript-eslint/eslint-plugin": "^4.11.1",
         "@typescript-eslint/parser": "^4.11.1",
-        "chalk": "^4.1.0",
         "commitizen": "^4.2.2",
         "core-js": "^3.8.1",
         "cross-env": "^7.0.3",
