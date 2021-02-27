@@ -1,7 +1,7 @@
 import path from "path";
 import glob from "glob";
 import fs from "fs";
-const chalk = require("chalk");
+import chalk from "chalk";
 import { Key, pathToRegexp } from "path-to-regexp";
 
 export const MOCK_DIR = "mock/data";
