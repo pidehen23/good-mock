@@ -58,16 +58,16 @@ module.exports = {
 shell 中执行
 
 ```bash
-nodemon --watch mock ./node_modules/.bin/good-mock (window运行可能有问题)
+nodemon --watch mock --exec ts-node ./node_modules/.bin/good-mock (window运行可能有问题)
 or
-nodemon --watch mock ./node_modules/good-mock/lib/index.js
+nodemon --watch mock --exec ts-node ./node_modules/good-mock/lib/index.js
 ```
 
 也可以在 package.json 中添加脚本执行
 
 ```
  "scripts": {
-   "mock": "nodemon --watch mock ./node_modules/.bin/good-mock"
+   "mock": "nodemon --watch mock --exec ts-node ./node_modules/good-mock/lib/index.js"
  }
 ```
 
