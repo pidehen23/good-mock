@@ -41,7 +41,7 @@ export default class Mock {
 		const protocol = this.isHttps ? "https://" : "http://";
 		app.use(express.static(path.join(__dirname, "./")));
 		app.use((req, _res, next) => {
-			console.log(chalk.green(`RequestURL: ${req.method} ${chalk.magenta.underline(protocol + this.host + "/" + this.port + req.url)}`));
+			console.log(chalk.green(`RequestURL: ${req.method} ${chalk.magenta.underline(protocol + this.host + ":" + this.port + req.url)}`));
 			next();
 		});
 
