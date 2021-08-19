@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.13](https://github.com/chenjiajing23/good-mock/compare/v1.2.12...v1.2.13) (2021-08-19)
+
+
+### Bug Fixes
+
+* 修复输出端口错误 ([94e579e](https://github.com/chenjiajing23/good-mock/commit/94e579e2a3e3fe3169aaadd87d1a74ddd0aa2a70))
+
 ### [1.2.12](https://github.com/chenjiajing23/good-mock/compare/v1.2.11...v1.2.12) (2021-07-13)
 
 ### [1.2.11](https://github.com/chenjiajing23/good-mock/compare/v1.2.10...v1.2.11) (2021-07-13)
